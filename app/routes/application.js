@@ -29,4 +29,9 @@ export default class ApplicationRoute extends Route {
   didTransition() {
     console.log('DID TRANSITION: here you are:', this.router.currentURL);
   }
+
+  @action
+  willTransition() {
+    console.log('WILL TRANSITION: here you are:', this.router.currentURL);
+  }
 }
